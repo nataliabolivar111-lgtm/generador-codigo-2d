@@ -1,2 +1,3 @@
 streamlit
-qr code [pill]
+qrcode[pil]
+pillow
