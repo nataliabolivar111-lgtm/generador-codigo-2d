@@ -56,11 +56,5 @@ st.download_button(
     mime="image/png"
 )
 
-        # Botón de descarga
-        st.download_button(
-            label="Descargar código PNG",
-            data=buffer.getvalue(),
-            file_name="codigo_2d.png",
-            mime="image/png"
-        )
+
 
