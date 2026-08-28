@@ -40,21 +40,19 @@ if st.button("Generar código"):
             back_color="white"
         )
 
-# Preparar la imagen como PNG
-buffer = BytesIO()
-imagen.save(buffer, format="PNG")
-imagen_bytes = buffer.getvalue()
+        # Preparar la imagen como PNG
+        buffer = BytesIO()
+        imagen.save(buffer, format="PNG")
+        imagen_bytes = buffer.getvalue()
 
-# Mostrar el código
-st.image(imagen_bytes)
+        # Mostrar el código
+        st.image(imagen_bytes)
 
-# Botón de descarga
-st.download_button(
-    label="Descargar código PNG",
-    data=imagen_bytes,
-    file_name="codigo_2d.png",
-    mime="image/png"
-)
-
-
+        # Botón de descarga
+        st.download_button(
+            label="Descargar código PNG",
+            data=imagen_bytes,
+            file_name="codigo_2d.png",
+            mime="image/png"
+        )
 
